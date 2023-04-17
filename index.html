@@ -17,16 +17,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#queEs" class="link_que-es">HOME</a>
+                    <a href="#home" class="link_que-es">HOME</a>
                 </li>
                 <li>
-                    <a href="#clientes" class="link_clientes">NOSOTROS</a>
+                    <a href="#nosotros" class="link_nosotros">NOSOTROS</a>
                 </li>
                 <li>
-                    <a href="#clientes" class="link_clientes">SERVICIOS</a>
+                    <a href="#servicios" class="link_servicios">SERVICIOS</a>
                 </li>
                 <li>
-                    <a href="#servicios" class="link_servicios">CONTACTOS</a>
+                    <a href="#formulario" class="link_contactos">CONTACTOS</a>
                 </li>
             </ul>
         </nav>
@@ -37,9 +37,17 @@
                 <img src="images/camion.jpg" alt="camiones">
             </div>
         </main>
-        <section>
-
-        </section>
+        <section class="formulario" id="formulario">
+            <h2>Contacto</h2>
+            <p>¡Déjanos tus datos y te contactaremos pronto!</p>
+            <form action="procesar_formulario.php" method="post">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" required>
+              <input type="submit" value="Enviar">
+              
+          </section>
         <footer>
 
         </footer>
