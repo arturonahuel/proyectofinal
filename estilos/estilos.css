@@ -1,3 +1,8 @@
+body, header, main {
+    margin: 0;
+    padding: 0;
+}
+
 header {
 	display: flex!important;
 	justify-content: space-between;
@@ -11,19 +16,19 @@ header {
 	background: transparent;
 	transition: all .3s;
 }
-
-header .containerLogo {
-	width: 170px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	margin-left: 50px;
-}
+header{
+	background: url(/images/camion.jpg) center center no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 600px;
+	position: relative;
+	padding-right: 0%;
+  }
 
 header .containerLogo .logo {
 	width: 100%;
 	max-width: 170px;
-	transition: all .3s;
+	
 }
 
 .headerActiveOnScroll {
@@ -161,7 +166,7 @@ a {
 }
 
 .logo{
-	margin-top: -46%;
+	margin-top: -10%;
 }
 body{
 	width: 100%;
@@ -176,6 +181,11 @@ body{
 	width: 100%;
 	height: auto;
 	display: block;
+}
+.formulario{
+	padding: 20%;
+	
 
 }
+
 
