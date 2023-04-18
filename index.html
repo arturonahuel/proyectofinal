@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilos.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <title>ProyectoFinal</title>
 </head>
 <body>
@@ -37,19 +38,47 @@
                 <img src="images/camion.jpg" alt="camiones">
             </div>
         </main>
+        <section class="nosotros" id="nosotros">
+            <h2>Presentacion de la organizacion</h2>
+            <p>
+                Somos una empresa con más de 20 años en el mercado de transporte de carga lo cual demuestra trayectoria, solvencia y conocimiento del negocio. 
+                Trabajamos en forma constante para brindar a nuestros clientes servicios de excelencia y calidad, teniendo como política fundamental la 
+                inversión permanente en:
+                <h3>Recursos Humanos</h3>
+                <p>Incorporar personal altamente capacitado porque son el factor clave de diferenciación competitiva.</p>
+
+                <h3>Vehículos</h3>
+                <p>A través de la constante renovación de la flota para mantener actualizado el parque automotor de la empresa y así brindar un servicio rápido y seguro con tecnología de punta</p>
+
+                <h3>Infraestructura</h3>
+                <p>Ampliando nuestra red de sucursales, centros de almacenaje y distribución en los puntos más importantes del país.</p>
+            </p>
+        </section>
+        <section class="servicios">
+            <div class="contenedor">
+                <div>cotizaciones</div>
+                <div>seguimiento</div>
+                <div>logistica y distribucion</div>
+            </div>
+
+        </section>
+        
         <section class="formulario" id="formulario">
-            <h2>Contacto</h2>
-            <p>¡Déjanos tus datos y te contactaremos pronto!</p>
-            <form action="procesar_formulario.php" method="post">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required>
-              <label for="correo">Correo electrónico:</label>
-              <input type="email" id="correo" name="correo" required>
-              <input type="submit" value="Enviar">
-              
-          </section>
+            <h1>CONTACTO</h1>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <button type="button" onclick="generarPDF()">Generar PDF</button>
+            </form>
+        
+        </section>
         <footer>
 
         </footer>
+        <script src="validacion/proyectofinal.js"></script>
 </body>
 </html>
