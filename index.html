@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <link rel="stylesheet" href="estilos/stilos.css">
+    <script src="js/formularios.js"></script>
     <title>ProyectoFinal</title>
 </head>
 <body>
@@ -18,67 +22,97 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#home" class="link_que-es">HOME</a>
+                    <a href="#home">HOME</a>
                 </li>
                 <li>
-                    <a href="#nosotros" class="link_nosotros">NOSOTROS</a>
+                    <a href="#nosotros">NOSOTROS</a>
                 </li>
                 <li>
-                    <a href="#servicios" class="link_servicios">SERVICIOS</a>
+                    <a href="#servicios">SERVICIOS</a>
                 </li>
                 <li>
-                    <a href="#formulario" class="link_contactos">CONTACTOS</a>
+                    <a href="#formulario">CONTACTOS</a>
                 </li>
             </ul>
         </nav>
     </header>    
 
-        <main id="idhome">
-            <div class="home">
-                <img src="images/camion.jpg" alt="camiones">
-            </div>
-        </main>
-        <section class="nosotros" id="nosotros">
-            <h2>Presentacion de la organizacion</h2>
-            <p>
-                Somos una empresa con más de 20 años en el mercado de transporte de carga lo cual demuestra trayectoria, solvencia y conocimiento del negocio. 
-                Trabajamos en forma constante para brindar a nuestros clientes servicios de excelencia y calidad, teniendo como política fundamental la 
-                inversión permanente en:
-                <h3>Recursos Humanos</h3>
-                <p>Incorporar personal altamente capacitado porque son el factor clave de diferenciación competitiva.</p>
+    <main id="idhome">
+    </main>
+    <h1>
+    <p class="TITULO" id="home">Logistica TA</p></h1>
+    
+    <div style="text-align: center;">
+    <img src="images/icon-logistica.png" alt="loguito del body"> </div>
+    
+    <div style="text-align: center;">
+        <img src="images/camion.jpg" alt="camiones" >
+     </div>
+    
+     <h1 id="nosotros">¿Quienes somos?</h1>
+    <h2><p class="Nosotros">Somos una empresa lider, con mas de 50 años de trayectoria en el mercado del tranporte y la logistica, transportando cargas pesadas y paquetes desde generaciones, llegando a cada hogar y empresa donde se nos requeriera al mejor precio y con la mejor calidad, adoptando las nuevas tegnologias y actualizando nuestra infraestructura, transportes y metodos logisticos, marcando tendencia en el mercado. </p></h2>
+    <h1 id="servicios">¿Que servicios ofrecemos?</h1>
+    <h2><p class="Servicios">Nuestros servicios consisten en translados de mercaderias de cualquier porte, cargas livianas, pesadas, paquetes individuales, cargas peligrosas y congelados. Contamos con un servicio de cotización automatico y asesoramiento logistico a demas empresas</p></h2>
+    
+    <div>
+        <h1>¿Necesitas una cotización?</h1>
+        <h2><p class="Servicios">Contamos un sistema automático de cotización online, colocá el origen y destino del transporte que queres realizar, junto con la cantidad de bultos, y su presupuesto será realizado.</p></h2>
+        <!-- <a href="contacto.html" target="_blank">Cotizá tu encomienda</a> -->
+        <div id="boton">
+            <a href="contacto.html" class="button blue" target="_blank">
+                <span class="icon-house"></span>Cotizá tu encomienda
+            </a>
+        </div>
+    </div>
 
-                <h3>Vehículos</h3>
-                <p>A través de la constante renovación de la flota para mantener actualizado el parque automotor de la empresa y así brindar un servicio rápido y seguro con tecnología de punta</p>
-
-                <h3>Infraestructura</h3>
-                <p>Ampliando nuestra red de sucursales, centros de almacenaje y distribución en los puntos más importantes del país.</p>
-            </p>
-        </section>
-        <section class="servicios">
-            <div class="contenedor">
-                <div>cotizaciones</div>
-                <div>seguimiento</div>
-                <div>logistica y distribucion</div>
-            </div>
-
-        </section>
+   <div class="contenedor">
+   <img src="images/camion22.jpg" alt="camion2">
+    
+   <div class="Contacto">Contactos:
+    <ul>
+    <li><i class="las la-envelope"></i>LogisticaTa@outlook.com</li> 
+    <li> <i class="las la-phone"></i>011-123456789 </li> 
+    <a href="https://www.facebook.com" target="_blank"><li><i class="lab la-facebook"></i> Facebook </li> </a>
+    <a href="https://www.instagram.com" target="_blank"><li> <i class="lab la-instagram"></i> Instagram </li> </a>
+    <a href="https://twitter.com/?lang=es" target="_blank"><li> <i class="lab la-twitter"></i> Twitter</li> </a>
+  </ul>
+</div>
+</div>
         
-        <section class="formulario" id="formulario">
-            <h1>CONTACTO</h1>
-            <form id="formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido"><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br>
-                <button type="button" onclick="generarPDF()">Generar PDF</button>
-            </form>
-        
-        </section>
-        <footer>
+<div class="cajaContainer">
+    <section>
+        <!-- Contenido del formulario de contacto -->
+        <h2 id="formulario">¿Necesitas contactarte con nosotros?</h2>
+        <h2>Podes contactarnos si queres formar parte de nuestro equipo o trabajar con nosotros, lo mismo si tenes alguna duda o consulta sobre nuestra empresa</h2>
+        <form id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="numero">Número telefónico</label>
+            <input type="number" id="numero" name="numero" required>
+            <label for="mensaje">Deje su consulta:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <input type="submit" value="Enviar">            
+        </form>
+    </section>
+</div>
 
-        </footer>
-        <script src="validacion/proyectofinal.js"></script>
+<section class="ubicacion">
+<div> Nos podes encontrar en la siguiente dirección:</div>
+<i class="las la-hand-point-down"></i></section>
+        
+        <div><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3399.516145938917!2d-60.65974728990302!3d-31.564890974086047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMzJzUzLjYiUyA2MMKwMzknMjUuOCJX!5e0!3m2!1ses!2sar!4v1681828581103!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        
+        <footer class="footer">
+            <div id="caja1">LOGISTICA TA. 2023, por Arturo, Lucas y Matias</div>
+            <div id="caja2"><ul>
+               <a href="https://www.facebook.com" target="_blank"><li class="lab la-facebook">Facebook  </li> </a>
+               <a href="https://twitter.com/?lang=es" target="_blank"><li class="lab la-twitter">Twitter  </li> </a>
+                <a href="https://www.instagram.com" target="_blank"><li class="lab la-instagram">Instagram  </li></a>
+            </ul> </div>
+        
+          </footer>
+        
 </body>
 </html>

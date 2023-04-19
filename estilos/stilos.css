@@ -1,0 +1,332 @@
+body, header, main {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+	display: flex!important;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+    left: -1px;
+	width: calc(100% + 5px);
+	height: 80px;
+	z-index: 1;
+	background: transparent;
+	transition: all .3s;
+}
+header{
+	background: url(/images/camion.jpg) center center no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 600px;
+	position: relative;
+	padding-right: 0%;
+  }
+
+header .containerLogo .logo {
+	width: 100%;
+	max-width: 170px;
+	
+}
+
+.headerActiveOnScroll {
+	/* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(55,79,140,1) 0%, rgba(0,185,182,1) 100%); */
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(55,79,140,1) 0%, rgba(0,185,182,1) 100%);
+	height: 80px;
+	transition: all .4s;
+	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.1));
+	transition: all .2s;
+}
+
+.headerActiveOnScroll .containerLogo a {
+	height: 22px;
+}
+
+
+.headerActiveOnScroll a {
+	color: #fff
+}
+
+.headerActiveOnScroll .containerLogo .logo {
+	width: 110px;
+	transition: all .3s;
+}
+
+header nav {
+	width: 70%;
+	background: transparent!important;
+	box-shadow: none;
+	margin-right: 50px;
+    line-height: 390%;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+header nav ul li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+header nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+	height: 65px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+header nav  li a i {
+	color: #fff;
+	font-size: 12px;
+}
+
+header nav ul li a:hover {
+	background: transparent;
+}
+
+header nav  li ul {
+	display:none;
+	position:absolute;
+	min-width:110px;
+}
+
+header nav  li:hover > ul {
+	/* display:block; */
+	display: flex;
+	flex-direction: column;
+	margin-top: 240px;
+	/* background-color: #209CAA; */
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(30,154,170,1) 0%, rgba(38,165,174,1) 100%);
+	height: auto;
+	padding-top: 10px;
+}
+
+header nav  li ul li {
+	/* position:relative; */
+	height: 30px;
+}
+
+header nav  li ul li:hover {
+	background-color: #26a5ae;
+	/* filter: brightness(50%); */
+	z-index: 10;
+}
+
+header nav  li ul li a {
+	width: 100%;
+}
+
+header nav ul li .changeLang {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 25px;
+	background: #808080;
+	padding: 0;
+	margin: 0;
+}
+header nav ul li .changeLang:hover {
+	background: #A1A1A1;
+}
+header nav ul li:last-child a div {
+	width: 100%;
+}
+
+header nav ul li:last-child a div img{
+	width: 106%;
+	margin-bottom: 20px;
+	padding-bottom: 2px;
+	margin-left: -1px;
+	object-fit: cover;
+	height: 24px;
+}
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none
+}
+
+ul:not(.browser-default)>li {
+    list-style-type: none
+}
+
+a {
+    color: #039be5;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+.logo{
+	margin-top: -10%;
+}
+body{
+	width: 100%;
+	height: auto;
+}
+
+#idhome{
+	width: 100%;
+	height: auto;
+}
+.home{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.formulario {
+
+	width: 500px;
+  
+	margin: 25px auto;
+	margin-top: 25%;
+  
+  }
+  
+  form {
+  
+	padding: 20px;
+  
+	background: #2c3e50;
+  
+	color: #fff;
+  
+	-moz-border-radius: 4px;
+  
+	-webkit-border-radius: 4px;
+  
+	border-radius: 4px;
+  
+  }
+  
+  form label,
+  
+  form input,
+  
+  form button {
+  
+	border: 0;
+  
+	margin-bottom: 3px;
+  
+	display: block;
+  
+	width: 100%;
+  
+  }
+  
+  form input {
+  
+	height: 25px;
+  
+	line-height: 25px;
+  
+	background: #fff;
+  
+	color: #000;
+  
+	padding: 0 6px;
+  
+	-moz-box-sizing: border-box;
+  
+	-webkit-box-sizing: border-box;
+  
+	box-sizing: border-box;
+  
+  }
+  
+  form button {
+  
+	height: 30px;
+  
+	line-height: 30px;
+  
+	background: rgb(37, 128, 180);
+  
+	color: #fff;
+  
+	margin-top: 10px;
+  
+	cursor: pointer;
+  
+  }
+  
+  form .error {
+  
+	color: #ff0000;
+  
+  }
+  .servicios{
+	display: flex;
+  }
+  
+
+  .footer { 
+    height: 100px;
+    padding: 25px;
+    border: 1px solid black;
+    color: aliceblue;
+    font-size:25px;
+    background-color: black;
+    display: flex; justify-content: space-around;
+    
+}
+.cajaContainer, .formularioCotizacion{
+	width: 500px;
+  
+    margin: 25px auto;
+}
+
+body {background-image:url(https://img.freepik.com/vector-gratis/fondo-patron-gris-geometrico-papercut-moderno_1035-23102.jpg?w=740&t=st=1681877046~exp=1681877646~hmac=c7674db57ab611f01bc5982b88e2893463ce822308e63f03f2c67227ee958be5); background-size: 100%;}
+#idhome { margin-top: 45px;}
+
+.TITULO{text-align: center; font-size: 60px;}
+
+.Nosotros {text-align: center;}
+.Servicios { text-align: center;}
+.contenedor {display: flex; justify-content: space-evenly}
+.Contacto {font-size: 20px;}
+
+h1, h2, div {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.ubicacion { font-size: 20px;}
+
+.ubicacion{text-align: center; font-size: 20px;}
+
+header{
+	position: sticky;
+}
+#boton{
+	text-align: center;
+	
+  	height: 100px;
+	margin-bottom: 10%;
+}
+
+.button {
+	justify-content: center;
+	background:#7f8c8d;
+	color:#fff;
+	display:inline-block;
+	font-size:1.25em;
+	margin: 25px;
+	padding:10px 0;
+	text-align:center;
+	width:230px;
+	text-decoration:none;
+	box-shadow:0px 3px 0px #373c3c;
+}
+.button span {
+	margin-right:10px;
+}
+.button.blue {
+	background:#3498db;
+	box-shadow:0px 3px 0px #266792;
+}
